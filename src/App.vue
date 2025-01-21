@@ -62,7 +62,7 @@ import CardDescription from './components/CardDescription.vue'
 </script>
 
 <template>
-  <div>
+  <main>
     <h1>Description list</h1>
     <div>
       <CardDescription :personInfos="personsList[0]" />
@@ -70,7 +70,26 @@ import CardDescription from './components/CardDescription.vue'
       <CardDescription :personInfos="personsList[2]" />
       <CardDescription :personInfos="personsList[3]" />
     </div>
-  </div>
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+main > div {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (max-width: 1250px) {
+  main > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+</style>

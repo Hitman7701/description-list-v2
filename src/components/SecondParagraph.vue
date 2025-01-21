@@ -1,11 +1,11 @@
 <script setup>
 const props = defineProps({
   firstname: String,
-  firstHooby: String,
+  firstHobby: String,
   secondHobby: String,
 })
 </script>
 
 <template>
-  <p>Outside of work, {{ firstname }} likes to {{ firstHooby }} and {{ secondHobby }}.</p>
+  <p>Outside of work, {{ firstname }} likes to {{ firstHobby }} and {{ secondHobby }}.</p>
 </template>
